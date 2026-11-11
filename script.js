@@ -22,6 +22,22 @@
     revealEls.forEach(function (el) { el.classList.add("in"); });
   }
 
+  /* ---- Mobile menu ---- */
+  var header = document.querySelector(".nav");
+  var toggle = document.querySelector(".nav-toggle");
+  function setMenu(open) {
+    header.classList.toggle("open", open);
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  }
+  if (toggle) {
+    toggle.addEventListener("click", function () { setMenu(!header.classList.contains("open")); });
+    header.querySelectorAll("nav a").forEach(function (a) {
+      a.addEventListener("click", function () { setMenu(false); });
+    });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") setMenu(false); });
+    document.addEventListener("click", function (e) { if (!header.contains(e.target)) setMenu(false); });
+  }
+
   /* ---- Highlight the current section in the nav ---- */
   var navLinks = document.querySelectorAll(".nav nav a");
   var sections = [];
@@ -83,6 +99,7 @@
     ctx.clearRect(0, 0, w, h);
     trace(t, 0, "#e0a458", h * 0.36);
     trace(t, Math.PI / 2, "#5fd4a0", h * 0.64);
+    if (w < 640) return; // channel labels would sit on top of the text on phones
     ctx.font = "500 11px 'JetBrains Mono', monospace";
     ctx.fillStyle = "#e0a458"; ctx.fillText("CH1  I", w - 76, h * 0.36 - Math.min(h * 0.13, 70) - 10);
     ctx.fillStyle = "#5fd4a0"; ctx.fillText("CH2  Q", w - 76, h * 0.64 - Math.min(h * 0.13, 70) - 10);
