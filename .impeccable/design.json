@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-12T00:00:00Z",
+  "title": "Design System: Saikirtan Srinivasan Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "signal": { "role": "primary", "displayName": "Signal Vermilion", "canonical": "oklch(0.55 0.2 32)", "tonalRamp": ["oklch(0.18 0.06 32)", "oklch(0.3 0.11 32)", "oklch(0.42 0.16 32)", "oklch(0.55 0.2 32)", "oklch(0.66 0.18 32)", "oklch(0.77 0.12 32)", "oklch(0.88 0.06 32)", "oklch(0.95 0.025 32)"] },
+      "signal-deep": { "role": "primary", "displayName": "Signal Deep", "canonical": "oklch(0.48 0.18 32)", "tonalRamp": ["oklch(0.18 0.06 32)", "oklch(0.3 0.11 32)", "oklch(0.42 0.16 32)", "oklch(0.48 0.18 32)", "oklch(0.66 0.18 32)", "oklch(0.77 0.12 32)", "oklch(0.88 0.06 32)", "oklch(0.95 0.025 32)"] },
+      "signal-light": { "role": "primary", "displayName": "Signal Light", "canonical": "oklch(0.7 0.19 38)", "tonalRamp": ["oklch(0.18 0.06 38)", "oklch(0.3 0.11 38)", "oklch(0.42 0.16 38)", "oklch(0.55 0.2 38)", "oklch(0.7 0.19 38)", "oklch(0.79 0.12 38)", "oklch(0.88 0.06 38)", "oklch(0.95 0.025 38)"] },
+      "f5": { "role": "secondary", "displayName": "Layer 5, Shallow (Autonomy)", "canonical": "oklch(0.93 0.035 190)", "tonalRamp": ["oklch(0.21 0.035 240)", "oklch(0.25 0.06 245)", "oklch(0.42 0.085 232)", "oklch(0.70 0.085 215)", "oklch(0.83 0.06 200)", "oklch(0.93 0.035 190)", "oklch(0.975 0.006 200)"] },
+      "f4": { "role": "secondary", "displayName": "Layer 4 (Edge ML)", "canonical": "oklch(0.83 0.06 200)", "tonalRamp": ["oklch(0.21 0.035 240)", "oklch(0.25 0.06 245)", "oklch(0.42 0.085 232)", "oklch(0.70 0.085 215)", "oklch(0.83 0.06 200)", "oklch(0.93 0.035 190)", "oklch(0.975 0.006 200)"] },
+      "f3": { "role": "secondary", "displayName": "Layer 3, Mid-water (Firmware)", "canonical": "oklch(0.70 0.085 215)", "tonalRamp": ["oklch(0.21 0.035 240)", "oklch(0.25 0.06 245)", "oklch(0.42 0.085 232)", "oklch(0.70 0.085 215)", "oklch(0.83 0.06 200)", "oklch(0.93 0.035 190)", "oklch(0.975 0.006 200)"] },
+      "f2": { "role": "secondary", "displayName": "Layer 2 (Circuits and PCB)", "canonical": "oklch(0.42 0.085 232)", "tonalRamp": ["oklch(0.21 0.035 240)", "oklch(0.25 0.06 245)", "oklch(0.42 0.085 232)", "oklch(0.70 0.085 215)", "oklch(0.83 0.06 200)", "oklch(0.93 0.035 190)", "oklch(0.975 0.006 200)"] },
+      "f1": { "role": "secondary", "displayName": "Layer 1, Deep (RF)", "canonical": "oklch(0.25 0.06 245)", "tonalRamp": ["oklch(0.21 0.035 240)", "oklch(0.25 0.06 245)", "oklch(0.42 0.085 232)", "oklch(0.70 0.085 215)", "oklch(0.83 0.06 200)", "oklch(0.93 0.035 190)", "oklch(0.975 0.006 200)"] },
+      "paper": { "role": "neutral", "displayName": "Cool Paper", "canonical": "oklch(0.975 0.006 200)", "tonalRamp": ["oklch(0.21 0.035 240)", "oklch(0.25 0.06 245)", "oklch(0.42 0.085 232)", "oklch(0.70 0.085 215)", "oklch(0.83 0.06 200)", "oklch(0.93 0.035 190)", "oklch(0.975 0.006 200)"] },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "oklch(0.21 0.035 240)", "tonalRamp": ["oklch(0.21 0.035 240)", "oklch(0.25 0.06 245)", "oklch(0.42 0.085 232)", "oklch(0.70 0.085 215)", "oklch(0.83 0.06 200)", "oklch(0.93 0.035 190)", "oklch(0.975 0.006 200)"] },
+      "on-dark": { "role": "neutral", "displayName": "On Dark", "canonical": "#fff", "tonalRamp": ["oklch(0.21 0.035 240)", "oklch(0.25 0.06 245)", "oklch(0.42 0.085 232)", "oklch(0.70 0.085 215)", "oklch(0.83 0.06 200)", "oklch(0.93 0.035 190)", "oklch(0.975 0.006 200)", "#fff"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The owner's name and the five layer names. Uppercase, font-stretch 62%." },
+      "headline": { "displayName": "Headline", "purpose": "Layer names in the hero bars, the contact question, headings under the stack, the rail monogram. Uppercase, font-stretch 62%." },
+      "title": { "displayName": "Title", "purpose": "Entry titles and the button label. font-stretch 87%." },
+      "body": { "displayName": "Body", "purpose": "Reading text at normal width, capped at 62ch." },
+      "label": { "displayName": "Label", "purpose": "Codes, dates, status flags, rail names, key and footer. Uppercase, font-stretch 75%; never monospace." }
+    },
+    "fieldDerivations": [
+      { "field": "paper", "on": "ink", "on2": "color-mix(in oklch, ink 78%, field)", "rule": "color-mix(in oklch, ink 22%, field)" },
+      { "field": "f5", "on": "ink", "on2": "color-mix(in oklch, ink 80%, field)", "rule": "color-mix(in oklch, ink 24%, field)" },
+      { "field": "f4", "on": "ink", "on2": "color-mix(in oklch, ink 82%, field)", "rule": "color-mix(in oklch, ink 28%, field)" },
+      { "field": "f3", "on": "ink", "on2": "color-mix(in oklch, ink 86%, field)", "rule": "color-mix(in oklch, ink 34%, field)" },
+      { "field": "f2", "on": "#fff", "on2": "color-mix(in oklch, #fff 90%, field)", "rule": "color-mix(in oklch, #fff 34%, field)" },
+      { "field": "f1", "on": "#fff", "on2": "color-mix(in oklch, #fff 84%, field)", "rule": "color-mix(in oklch, #fff 26%, field)" }
+    ],
+    "shadows": [
+      { "name": "target-spread", "value": "0 0 0 1rem color-mix(in oklch, var(--on) 11%, transparent)", "purpose": "Not elevation: an unblurred spread that widens the tint behind a targeted entry." },
+      { "name": "bar-current", "value": "inset 0 -5px 0 var(--signal)", "purpose": "Not elevation: the current-segment marker on the narrow top bar (ink on the contact segment)." }
+    ],
+    "motion": [
+      { "name": "ease-settle", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "The one easing curve: bar entrance, rail segment growth, bar hover slide, link arrow nudge. A repeated literal in the build, not a custom property." },
+      { "name": "settle", "value": "0.8s, from opacity 0 and translateY(-34px), delay calc(var(--i) * 80ms + 120ms)", "purpose": "Hero stack bars settle once on load, bottom bar first. The only entrance animation." },
+      { "name": "duration-state", "value": "0.35s", "purpose": "Rail segment growth and layer-bar hover slide." },
+      { "name": "duration-quick", "value": "0.2s", "purpose": "Button fill and link underline colour." },
+      { "name": "duration-arrow", "value": "0.3s", "purpose": "Link arrow nudge on hover." },
+      { "name": "reduced-motion", "value": "animation: none; transition: none; scroll-behavior: auto", "purpose": "Under prefers-reduced-motion the entrance and every transition are removed." }
+    ],
+    "breakpoints": [
+      { "name": "layer-head-stack", "value": "1040px" },
+      { "name": "narrow", "value": "900px" },
+      { "name": "phone", "value": "520px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one filled action per view; the email action in the build.",
+      "html": "<a class=\"ds-btn\" href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\"><path d=\"M3 5h18v14H3zM3 6l9 7 9-7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"miter\"/></svg>Email me</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; gap: 0.6rem; min-height: 44px; padding: 0 1.25rem; background: var(--signal); color: #fff; font-family: var(--font); font-stretch: 87%; font-weight: 700; font-size: 1.0625rem; text-decoration: none; border-radius: 0; transition: background 0.2s; } .ds-btn:hover { background: var(--signal-deep); } .ds-btn:focus-visible { outline: 3px solid var(--signal); outline-offset: 3px; }"
+    },
+    {
+      "name": "Text Link",
+      "kind": "custom",
+      "description": "Secondary actions and in-entry links: underlined text with a trailing arrow that nudges on hover.",
+      "html": "<a class=\"ds-link\" href=\"#\">Code on GitHub<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\"><path d=\"M7 17 18 6M9 6h9v9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\"/></svg></a>",
+      "css": ".ds-link { display: inline-flex; align-items: center; gap: 0.4rem; min-height: 32px; color: var(--ink); font-family: var(--font); font-weight: 600; font-size: 1.0625rem; text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 0.22em; text-decoration-color: color-mix(in oklch, currentColor 45%, transparent); transition: text-decoration-color 0.2s; } .ds-link:hover { text-decoration-color: currentColor; } .ds-link svg { transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); } .ds-link:hover svg { transform: translate(2px, -2px); } .ds-link:focus-visible { outline: 3px solid var(--signal); outline-offset: 3px; }"
+    },
+    {
+      "name": "Thread Link",
+      "kind": "custom",
+      "description": "Jumps to the same project in another layer; led by the signal diamond.",
+      "html": "<a class=\"ds-thread\" href=\"#\">E1 continues in Firmware<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\"><path d=\"M12 4v15M5 13l7 7 7-7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\"/></svg></a>",
+      "css": ".ds-thread { display: inline-flex; align-items: center; gap: 0.4rem; min-height: 32px; color: var(--ink); font-family: var(--font); font-weight: 600; font-size: 1.0625rem; text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 0.22em; text-decoration-color: color-mix(in oklch, currentColor 45%, transparent); transition: text-decoration-color 0.2s; } .ds-thread::before { content: \"\"; flex: none; width: 0.5rem; height: 0.5rem; margin-right: 0.2rem; background: var(--signal); transform: rotate(45deg); } .ds-thread:hover { text-decoration-color: currentColor; } .ds-thread svg { transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); } .ds-thread:hover svg { transform: translateY(3px); } .ds-thread:focus-visible { outline: 3px solid var(--signal); outline-offset: 3px; }"
+    },
+    {
+      "name": "Layer Stack Diagram",
+      "kind": "custom",
+      "refersTo": "layer-bar-f5",
+      "description": "Signature component: five equal bars in ramp order, each a link to its layer.",
+      "html": "<ol class=\"ds-stack\"><li><a class=\"ds-bar ds-l5\" href=\"#\"><b>Autonomy</b><span>E1 Hospital delivery robot</span></a></li><li><a class=\"ds-bar ds-l4\" href=\"#\"><b>Edge ML</b><span>P2 ASH thermal sensing hub</span></a></li><li><a class=\"ds-bar ds-l3\" href=\"#\"><b>Firmware</b><span>P4 GPS relay over BLE</span></a></li><li><a class=\"ds-bar ds-l2\" href=\"#\"><b>Circuits &amp; PCB</b><span>P3 USB to UART bridge</span></a></li><li><a class=\"ds-bar ds-l1\" href=\"#\"><b>RF</b><span>P1 2.4 GHz SDR receiver</span></a></li></ol>",
+      "css": ".ds-stack { display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; font-family: var(--font); min-width: 420px; } .ds-stack li { display: flex; } .ds-bar { flex: 1; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); align-items: center; gap: 1rem; min-height: 72px; padding: 0.75rem 1.5rem; text-decoration: none; transition: padding-left 0.35s cubic-bezier(0.16, 1, 0.3, 1); } .ds-bar:hover { padding-left: 2.6rem; } .ds-bar:focus-visible { outline: 3px solid var(--signal); outline-offset: 3px; } .ds-bar b { font-stretch: 62%; font-weight: 800; text-transform: uppercase; font-size: 2.4rem; line-height: 0.9; } .ds-bar span { font-stretch: 87%; font-weight: 500; font-size: 0.9375rem; line-height: 1.4; opacity: 0.85; } .ds-l5 { background: var(--f5); color: var(--ink); } .ds-l4 { background: var(--f4); color: var(--ink); } .ds-l3 { background: var(--f3); color: var(--ink); } .ds-l2 { background: var(--f2); color: #fff; } .ds-l1 { background: var(--f1); color: #fff; } .ds-l2:focus-visible, .ds-l1:focus-visible { outline-color: #fff; }"
+    },
+    {
+      "name": "Rail (narrow form)",
+      "kind": "nav",
+      "refersTo": "rail-segment",
+      "description": "The stack as navigation, shown in its 900px-and-below top-bar form; on desktop the same segments run vertically in a fixed 52px left column with a signal diamond on the current one.",
+      "html": "<nav class=\"ds-rail\"><a class=\"ds-rail-top\" href=\"#\">SS</a><a class=\"ds-rail-l5\" href=\"#\"><span>Autonomy</span></a><a class=\"ds-rail-l4\" href=\"#\"><span>Edge ML</span></a><a class=\"ds-rail-l3 ds-rail-current\" href=\"#\"><span>Firmware</span></a><a class=\"ds-rail-l2\" href=\"#\"><span>Circuits</span></a><a class=\"ds-rail-l1\" href=\"#\"><span>RF</span></a><a class=\"ds-rail-contact\" href=\"#\" aria-label=\"Contact\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\"><path d=\"M3 5h18v14H3zM3 6l9 7 9-7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"miter\"/></svg></a></nav>",
+      "css": ".ds-rail { display: flex; height: 46px; min-width: 420px; font-family: var(--font); font-stretch: 62%; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; font-size: 0.75rem; } .ds-rail a { flex: 1; display: grid; place-items: center; text-decoration: none; } .ds-rail a:focus-visible { outline: 3px solid var(--signal); outline-offset: -3px; } .ds-rail-top { flex: 0 0 40px !important; background: var(--ink); color: #fff; font-weight: 800; font-size: 1rem; } .ds-rail-l5 { background: var(--f5); color: var(--ink); } .ds-rail-l4 { background: var(--f4); color: var(--ink); } .ds-rail-l3 { background: var(--f3); color: var(--ink); } .ds-rail-l2 { background: var(--f2); color: #fff; } .ds-rail-l1 { background: var(--f1); color: #fff; } .ds-rail-contact { flex: 0 0 44px !important; background: var(--signal); color: #fff; } .ds-rail-current { box-shadow: inset 0 -5px 0 var(--signal); font-weight: 800; }"
+    },
+    {
+      "name": "Entry",
+      "kind": "custom",
+      "refersTo": "entry",
+      "description": "A rule-topped row for one piece of work: code, title with dates and status, description. Not a card.",
+      "html": "<article class=\"ds-entry\"><p class=\"ds-entry-code\">P2</p><div><h3>ASH, the Ambient Sensing Hub</h3><p class=\"ds-entry-meta\">Nov 2025 to Apr 2026</p><p class=\"ds-entry-flag\">Top 10 teams nationally</p></div><div class=\"ds-entry-body\"><p>Built an ML-based people detection system on 32×24 thermal imaging data.</p></div></article>",
+      "css": ".ds-entry { display: grid; grid-template-columns: 3.5rem minmax(0, 17rem) minmax(0, 1fr); gap: 0.5rem 2rem; padding: 1.5rem; background: var(--f4); color: var(--ink); border-top: 1.5px solid color-mix(in oklch, var(--ink) 28%, var(--f4)); font-family: var(--font); font-size: 1.0625rem; line-height: 1.55; } .ds-entry p, .ds-entry h3 { margin: 0; } .ds-entry h3 { font-stretch: 87%; font-weight: 700; font-size: 1.4375rem; line-height: 1.15; } .ds-entry-code, .ds-entry-meta, .ds-entry-flag { font-stretch: 75%; font-weight: 600; text-transform: uppercase; letter-spacing: 0.055em; font-size: 0.8125rem; line-height: 1.5; } .ds-entry-code { font-size: 1rem; font-weight: 800; padding-top: 0.2rem; } .ds-entry-meta { margin-top: 0.6rem !important; color: color-mix(in oklch, var(--ink) 82%, var(--f4)); } .ds-entry-flag { margin-top: 0.6rem !important; display: flex; gap: 0.55rem; align-items: baseline; } .ds-entry-flag::before { content: \"\"; flex: none; width: 0.6rem; height: 0.6rem; background: var(--signal); } .ds-entry-body { max-width: 62ch; }"
+    },
+    {
+      "name": "Contact Band",
+      "kind": "custom",
+      "refersTo": "contact-band",
+      "description": "The page's closing band and the only full signal field.",
+      "html": "<section class=\"ds-contact\"><h2>Have a role, a research project or a board that needs debugging?</h2><a href=\"#\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\"><path d=\"M3 5h18v14H3zM3 6l9 7 9-7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"miter\"/></svg>Email</a></section>",
+      "css": ".ds-contact { background: var(--signal); color: #fff; padding: 3rem 2rem 2rem; font-family: var(--font); } .ds-contact h2 { margin: 0; font-stretch: 62%; font-weight: 800; text-transform: uppercase; font-size: 3rem; line-height: 0.92; max-width: 18ch; } .ds-contact a { display: inline-flex; align-items: center; gap: 0.7rem; min-height: 48px; margin-top: 2rem; color: inherit; font-size: 1.375rem; font-weight: 600; text-decoration-thickness: 1.5px; text-underline-offset: 0.22em; } .ds-contact a:hover { text-decoration-thickness: 3px; } .ds-contact a:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Layer Stack",
+    "overview": "The page is drawn as an engineering stack diagram that happens to be a portfolio. Five full-bleed colour fields run from Autonomy at the top to RF at the bottom, each one a step darker than the one above it, and the work sits inside the layer it was done at. The same five bands appear three times at three scales: as the hero diagram, as the fixed rail that navigates the page, and as the sections themselves. Nothing else on the page competes with that one picture.\n\nThe surface is flat, square and dense with fact. Structure comes from colour fields and 1.5px rules, never from boxes; hierarchy comes from one typeface changing width, never from a second family. One vermilion signal marks what a visitor can act on or should notice, and it is the only colour outside the blue-green ramp.",
+    "keyCharacteristics": [
+      "Five tonal fields in one hue family, ordered light to dark, each tied to one layer of the stack",
+      "A single typeface (Archivo) worked along its width axis: 62%, 75%, 87%, 100%",
+      "Square corners, 1.5px rules, full-bleed bands; no cards, no elevation",
+      "One signal colour, used for action, thread, status and position",
+      "Still by default: one entrance animation, then state changes only"
+    ],
+    "rules": [
+      { "name": "The Depth Is Meaning Rule", "body": "A ramp step is a layer of the stack. `f5` to `f1` appear only in stack order and only to mean their layer; they are never picked for decoration, contrast or variety.", "section": "colors" },
+      { "name": "The Field Sets The Ink Rule", "body": "A component never names its own colours. It reads four local values from the field it sits on (field, text, secondary text, rule), so the same entry markup is correct on paper and on all five layers.", "section": "colors" },
+      { "name": "The One Signal Rule", "body": "Vermilion means \"act here\", \"this continues elsewhere\", \"status\" or \"you are here\". If a use fits none of those, it does not get the signal.", "section": "colors" },
+      { "name": "The Width Not Family Rule", "body": "Hierarchy is made by moving along Archivo's width axis and weight, not by adding a typeface. The label voice is condensed caps; it is never monospace.", "section": "typography" },
+      { "name": "The Caps Are Names Rule", "body": "Uppercase is for names and labels only: the owner, a layer, a code, a date. Anything a visitor reads as a sentence is sentence case at normal width.", "section": "typography" },
+      { "name": "The Flat Stack Rule", "body": "A surface is distinguished from its neighbour by its field colour or by a rule. Blur, offset shadows and translucent overlays are not part of this system.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do place new work inside the layer it belongs to and let that layer's field colour it; split work that spans layers and join the parts with thread links.",
+      "Do build components from the four local field values so they hold on paper and all five layers without overrides.",
+      "Do separate items with a 1.5px rule in the field's rule colour and full-bleed bands.",
+      "Do set names in 62% width, weight 800 caps, entry titles in 87% width, labels in 75% width semibold caps, and reading text at normal width.",
+      "Do switch markers to Signal Light on `f2` and `f1`, and the focus ring to white on dark and signal fields.",
+      "Do keep every interactive target at 44px or taller where it is a primary action, and honour `prefers-reduced-motion` by removing the entrance and all transitions."
+    ],
+    "donts": [
+      "Don't use a ramp colour out of stack order or for anything other than its layer.",
+      "Don't add a second accent, or use the signal as body text or as decoration.",
+      "Don't add a second typeface, including a monospace for codes and tool lists.",
+      "Don't round corners, box content into cards, or use blurred or offset shadows.",
+      "Don't add scroll-triggered or looping motion; the bars settling once on load is the only entrance.",
+      "Don't wrap bands in a max-width container; constrain text by measure instead."
+    ]
+  }
+}

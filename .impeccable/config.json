@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-12T05:32:44.332Z",
+        "reason": "false positive: sections are inset by padding set through var(--pad) and clamp(); rendered inset is 60px+ at 1440 and 18px+ at 390, verified in screenshots"
+      }
+    ]
+  }
+}
