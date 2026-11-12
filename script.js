@@ -45,7 +45,10 @@
     var target = document.querySelector(link.getAttribute("href"));
     if (target) sections.push({ link: link, el: target });
   });
+  var progress = document.querySelector(".progress");
   function updateActive() {
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (progress) progress.style.transform = "scaleX(" + (max > 0 ? Math.min(window.scrollY / max, 1) : 0) + ")";
     var probe = window.scrollY + window.innerHeight * 0.35;
     var current = null;
     sections.forEach(function (s) {
